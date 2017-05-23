@@ -16,7 +16,7 @@ func main() {
 	fmt.Printf("main tag: %d\n", tag)
 	//test goroutine
 	go do()
-	time.Sleep(200*100)
+	time.Sleep(200 * 100)
 	fmt.Printf("main tag: %d\n", tag)
 
 }

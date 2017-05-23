@@ -17,7 +17,7 @@ func main() {
 	//test goroutine
 	go do()
 
-	<- ch
+	<-ch
 
 	fmt.Printf("main tag: %d\n", tag)
 
