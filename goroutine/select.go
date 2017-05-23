@@ -7,7 +7,6 @@ import (
 )
 
 var tag = 0
-var ch = make(chan int, 1)
 
 func main() {
 
@@ -17,19 +16,13 @@ func main() {
 
 	//test goroutine
 	go do()
-	select {
-		case <- ch:
-			fmt.Println("chan")
-	}
-
-
+	select {}
 
 	fmt.Printf("main tag: %d\n", tag)
 
 }
 
 func do() {
-	ch <- 1
 	tag++
 	fmt.Printf("do tag: %d\n", tag)
 }
