@@ -31,18 +31,18 @@ func main() {
 	l = s[2:]
 	fmt.Println(l)
 
-	t := []string{ "1", "2", "3"}
+	t := []string{"1", "2", "3"}
 	fmt.Println(t)
 
-	for k, v := range t{
+	for k, v := range t {
 		fmt.Println("range:", k, v)
 	}
 
-	 o := make([][]int, 3)
-	for i:=0; i<3; i++{
+	o := make([][]int, 3)
+	for i := 0; i < 3; i++ {
 		o[i] = make([]int, i+1)
-		for j:=0; j<len(o[i]); j++{
-			o[i][j] = j+1
+		for j := 0; j < len(o[i]); j++ {
+			o[i][j] = j + 1
 		}
 	}
 	fmt.Println(o)
