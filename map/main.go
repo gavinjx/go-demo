@@ -26,4 +26,6 @@ func main() {
 	}
 	fmt.Println(newMap)
 
+	test := map[string]int{}
+	fmt.Println(len(test))
 }
