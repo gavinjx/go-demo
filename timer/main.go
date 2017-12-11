@@ -21,6 +21,9 @@ func testTimer2() {
 
 func timer1() {
 	timer1 := time.NewTicker(2 * time.Second)
+	var a int
+	a = 10
+	fmt.Printf("%v", a)
 	select {
 	case <-timer1.C:
 		testTimer1()
