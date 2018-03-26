@@ -18,6 +18,12 @@ func (p IpAddr) String() string {
 func (p AddrName) String() string {
 	return fmt.Sprintf("key %v", string(p))
 }
+
+//空接口
+func Print(v interface{}) {
+	fmt.Printf("%T, %v\n", v, v)
+}
+
 func main() {
 	ips := map[AddrName]IpAddr{
 		"localhost": {127, 0, 0, 1},
@@ -26,4 +32,5 @@ func main() {
 	for name, ip := range ips {
 		fmt.Printf("%v: %v\n", name, ip)
 	}
+	Print("Hello World!")
 }
